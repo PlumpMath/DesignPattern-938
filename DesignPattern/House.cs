@@ -9,7 +9,7 @@ namespace DesignPattern
     class House
     {
         private bool _isOpen;
-        protected IFireplaceBehaviour fireplaceBehaviour;
+        public IFireplaceBehaviour FireplaceBehaviour { get; set; }
 
 
         public bool OpenDoor()
@@ -24,12 +24,12 @@ namespace DesignPattern
 
         public void TurnOnFireplace()
         {
-            fireplaceBehaviour.TurnOnFireplace();
+            FireplaceBehaviour.TurnOnFireplace();
         }
 
         public void TurnOffFireplace()
         {
-            fireplaceBehaviour.TurnOffFireplace();
+            FireplaceBehaviour.TurnOffFireplace();
         }
 
     }

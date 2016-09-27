@@ -10,7 +10,7 @@ namespace DesignPattern
     {
         public ModernHouse()
         {
-            fireplaceBehaviour = new ElectricFireplace();
+            FireplaceBehaviour = new ElectricFireplace();
         }
     }
 }

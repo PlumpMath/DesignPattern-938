@@ -14,7 +14,11 @@ namespace DesignPattern
             h1.TurnOnFireplace();
 
             House h2 = new ModernHouse();
-            h2.TurnOffFireplace();
+            h2.TurnOnFireplace();
+
+            // Perform upgrade to traditional house
+            h1.FireplaceBehaviour = new ElectricFireplace();
+            h1.TurnOnFireplace();
         }
     }
 }

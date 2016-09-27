@@ -10,7 +10,7 @@ namespace DesignPattern
     {
         public TraditionalHouse()
         {
-            fireplaceBehaviour = new WoodFireplace();
+            FireplaceBehaviour = new WoodFireplace();
         }
     }
 }
